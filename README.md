@@ -1,5 +1,13 @@
+# Introduction
+This repository contains a Python-based AI agent designed to automate the periodic monitoring of competitors in the energy optimization sector, specifically for companies like Cubenergy, Pixii, Ampere Energy, and Ampowr. Built with LangChain, Ollama (using the Mistral LLM), and tools like DuckDuckGo for web searches, the agent gathers recent news and updates, generates structured reports (covering key updates, product developments, market strategies, threats/opportunities, and insights), and saves them to timestamped files in the `competitor-reports` directory.
 
-# How to get started?
+# Key features
+- Configurable Scheduling: Run reviews daily, weekly, or monthly using the schedule library.
+- ReAct Agent Workflow: Employs a ReAct-style agent for intelligent content gathering and reasoning.
+- Local LLM: Runs Mistral via Ollama for privacy and cost-efficiency.
+- Sample Outputs: Check the `sample-output` folder for example reports. 
+
+# Setup
 
 Steps below asuume that a Python virtual environment is active. If not, install Python virtual environment and activate it. 
 
@@ -8,7 +16,7 @@ Steps below asuume that a Python virtual environment is active. If not, install 
 3. Execute the Script: Save as `competitor_agent.py` and run `python competitor_agent.py`. It will schedule and run reviews based on your configured periodicity.
 4. Testing: Use `start_agent(60)` to run every minute for quick tests. 
 
-# 
+# Flowcharts
 
 ```mermaid
 graph TD
